@@ -160,7 +160,7 @@ Deployment
 
 ## Live Demo
 
-**Live Website:** `ADD_VERCEL_URL`
+**Live Website:** https://redentclinic.vercel.app
 
 
 ---
