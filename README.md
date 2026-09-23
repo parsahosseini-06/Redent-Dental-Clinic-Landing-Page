@@ -162,13 +162,12 @@ Deployment
 
 **Live Website:** `ADD_VERCEL_URL`
 
-**Figma / Design:** `ADD_FIGMA_URL_IF_AVAILABLE`
 
 ---
 
 ## Repository
 
-**GitHub:** `ADD_GITHUB_REPOSITORY_URL`
+**GitHub:** https://github.com/parsahosseini-06/Redent-Dental-Clinic-Landing-Page
 
 ---
 
@@ -179,8 +178,8 @@ Replace this list with the exact technologies used in the final implementation.
 - HTML
 - CSS
 - JavaScript
-- React — if used
-- Framer Motion / GSAP — if used
+- React 
+- Framer Motion / GSAP 
 - Git
 - GitHub
 - Vercel
