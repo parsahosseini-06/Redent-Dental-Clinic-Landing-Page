@@ -1,0 +1,206 @@
+.booking-section {
+  padding: var(--space-20) 0;
+  background-color: var(--bg-page);
+}
+
+.booking-card {
+  background-color: var(--bg-dark);
+  color: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: clamp(32px, 5vw, 64px);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  align-items: center;
+}
+
+/* Phone: slightly tighter card padding keeps the form usable edge-to-edge */
+@media (max-width: 480px) {
+  .booking-card {
+    padding: var(--space-6);
+  }
+}
+
+@media (min-width: 900px) {
+  .booking-card {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+  }
+}
+
+.booking-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.booking-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-sage-400);
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.booking-title {
+  font-family: var(--font-serif);
+  font-size: clamp(34px, 4.2vw, 54px);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+  margin-bottom: var(--space-4);
+}
+
+.booking-intro {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--color-surface-2);
+  margin-bottom: var(--space-8);
+  max-width: 420px;
+}
+
+.booking-trust-points {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--color-surface-1);
+}
+
+.booking-right {
+  background-color: var(--color-scale-85);
+  border: 1px solid var(--color-scale-8);
+  border-radius: var(--radius-lg);
+  padding: clamp(24px, 4vw, 40px);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-surface-3);
+  letter-spacing: 0.02em;
+}
+
+.form-field input {
+  background-color: var(--color-scale-9);
+  border: 1px solid var(--color-scale-8);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  transition: border-color var(--duration-fast) var(--ease-standard);
+}
+
+/* 16px on mobile prevents iOS Safari from auto-zooming the viewport on focus */
+@media (max-width: 767px) {
+  .form-field input {
+    font-size: 16px;
+  }
+}
+
+.form-field input:focus {
+  border-color: var(--color-sage-400);
+}
+
+.form-field input::placeholder {
+  color: var(--color-scale-6);
+}
+
+.btn-submit-booking {
+  margin-top: var(--space-3);
+  background-color: var(--color-white);
+  color: var(--color-text-black);
+  padding: 14px 24px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all var(--duration-fast) var(--ease-standard);
+  min-height: 48px;
+}
+
+.btn-submit-booking:hover:not(:disabled) {
+  background-color: var(--color-surface-1);
+  transform: translateY(-1px);
+}
+
+.btn-submit-booking:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.booking-error-alert {
+  background-color: rgba(200, 117, 103, 0.15);
+  border: 1px solid var(--color-coral);
+  color: #f7a394;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+}
+
+.booking-success-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-4) 0;
+}
+
+.success-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-sage-500);
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+}
+
+.booking-success-box h3 {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  margin-bottom: var(--space-2);
+}
+
+.booking-success-box p {
+  font-size: 14px;
+  color: var(--color-surface-2);
+  margin-bottom: var(--space-6);
+  max-width: 320px;
+}
+
+.success-reset {
+  color: var(--color-white);
+  border-color: var(--color-scale-7);
+}
