@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Lenis from 'lenis';
+import { Analytics } from '@vercel/analytics/react';
 import StickyHeader from './components/StickyHeader';
 import HeroSection from './components/HeroSection';
 import ValueTicker from './components/ValueTicker';
@@ -74,6 +75,7 @@ export default function App() {
         <BookingCta />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
